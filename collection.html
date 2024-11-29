@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>collection</title>
+    <!-- Tailwind css cdn link -->
+    <link href="
+        https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
+        " rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- navebar section -->
+    <section class="flex justify-between ">
+        <div class="font-bold text-3xl relative left-4 top-3 ">
+            <h1>Nostra</h1>
+        </div>
+
+
+        <svg id="menu" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        class="size md:hidden" width="20px">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+    </svg>
+
+
+
+        <div class="flex hidden md:flex gap-14 relative right-4 top-4 ">
+
+
+            <ul class="flex gap-5 text-gray-600 hidden md:flex">
+                <li>
+                    <a class="hover:underline hover:text-black " href="index.html">Home</a>
+                </li>
+                <li>
+                    <a class="hover:underline  hover:text-black" href="./index.html#new arrival">New Arrival</a>
+                </li>
+                <li>
+                    <a class="hover:underline   hover:text-black" href="./index.html#most wanted">Most Wanted</a>
+                </li>
+                <li>
+                    <a class="hover:underline   hover:text-black" href="collection.html">Collection</a>
+                </li>
+                <li>
+                    <a class="hover:underline   hover:text-black" href="contact.html">contact Us</a>
+                </li>
+            </ul>
+
+        </div>
+    </section>
+
+
+
+        <!-- side navbar -->
+        <section id="sidenav" class="bg-gray-800 fixed z-20 top-0 right-0 transition-all duration-1000"  style="width: 50%;height: 100vh; right: -50%;">
+
+            <div class="text-right p-5">
+                <p id="closenav" class="inline cursor-pointer">X</p>
+            </div>
+    
+            <ul class="flex flex-col items-center gap-10 text-gray-700 ">
+                <li>
+                    <a class="hover:underline hover:text-black " href="index.html">Home</a>
+                </li>
+                <li>
+                    <a class="hover:underline  hover:text-black" href="#new arrival">New Arrival</a>
+                </li>
+                <li>
+                    <a class="hover:underline   hover:text-black" href="#most wanted">Most Wanted</a>
+                </li>
+                <li>
+                    <a class="hover:underline   hover:text-black" href="collection.html">Collection</a>
+                </li>
+                <li>
+                    <a class="hover:underline   hover:text-black" href="contact.html">contact Us</a>
+                </li>
+            </ul>
+    
+         </section>
+
+
+
+
+
+    <!-- Best seller -->
+    <section class="p-4 text-center ml-48">
+        <h1 class="text-3xl font-bold text-center">Our Products</h1>
+        <input id="search" class="border border-black p-3 m-5 " style="width: 60%;" type="text"
+            placeholder="search for a Products..">
+
+        <div id="product-container" class="grid grid-cols-2 md:grid-cols-4 mt-5 gap-5">
+            <div class="text-center">
+                <img src="./images/ts1.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2" alt="img">
+                <p>us polo</p>
+                <p>$20</p>
+            </div>
+
+            <div class="text-center">
+                <img src="./images/ts2.webp" class="inline hover:shadow-xl transform hover:-translate-y-2" alt="img">
+                <p>Lives</p>
+                <p>$20</p>
+            </div>
+
+            <div class="text-center">
+                <img src="./images/ts3.webp" class="inline hover:shadow-xl transform hover:-translate-y-2" alt="img">
+                <p>Tommy Hilfiger</p>
+                <p>$20</p>
+            </div>
+
+            <div class="text-center">
+                <img src="./images/ts1.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2" alt="img">
+                <p>us polo</p>
+                <p>$20</p>
+            </div>
+
+            <div class="text-center">
+                <img src="./images/ts3.webp" class="inline hover:shadow-xl transform hover:-translate-y-2" alt="img">
+                <p>fila</p>
+                <p>$20</p>
+            </div>
+
+            <div class="text-center">
+                <img src="./images/ts1.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2" alt="img">
+                <p>Jack & Jones</p>
+                <p>$20</p>
+            </div>
+
+            <div class="text-center">
+                <img src="./images/ts3.webp" class="inline hover:shadow-xl transform hover:-translate-y-2" alt="img">
+                <p>Allen Solly</p>
+                <p>$20</p>
+            </div>
+
+            <div class="text-center">
+                <img src="./images/ts2.webp" class="inline hover:shadow-xl transform hover:-translate-y-2" alt="img">
+                <p>H&M</p>
+                <p>$20</p>
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <!-- side container -->
+    <section>
+        <div class="absolute top-32 left-6">
+            <h1 class="font-bold text-3xl">Nostra</h1>
+            <h2 class="text-2xl">occasion</h2>
+            <p><input type="checkbox">Summer</p>
+            <p><input type="checkbox">Party</p>
+            <p><input type="checkbox">Beach</p>
+        </div>
+
+        <div class="absolute top-72 left-6">
+
+            <h2 class="text-2xl">color</h2>
+            <p><input type="checkbox">Red</p>
+            <p><input type="checkbox">Black</p>
+            <p><input type="checkbox">Blue</p>
+            <p><input type="checkbox">White</p>
+        </div>
+
+        <div class="absolute bottom-36  left-6">
+            
+            <h2 class="text-2xl">Arrival</h2>
+            <p><input type="checkbox">Old</p>
+            <p><input type="checkbox">New</p>
+        </div>
+        <div class="vl flex ml-44 absolute top-36" style="  border-left: 2px solid rgb(11, 11, 11);
+        height: 950px;"></div>
+    </section>
+
+
+    <!-- footer -->
+    <section class="relative top-32">
+
+        <div class="bg-blue-900 p-10 m- flex flex-col gap-5">
+            <h1 class="text-4xl font-bold ">Nostra</h1>
+            <p class="text-2xl">Level up your style with our.</p>
+            <p>@ 2021 Nostra.com</p>
+        </div>
+    </section>
+
+
+    <script src="collection.js"></script>
+
+
+</body>
+
+</html>
